@@ -1,6 +1,6 @@
 function Contenedor({children}) {
     return (
-        <div className="w-screen h-screen bg-gray-500">
+        <div className="w-screen flex justify-center items-center h-screen bg-white-gray">
             {children}
         </div>
     )
