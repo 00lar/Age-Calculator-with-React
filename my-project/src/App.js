@@ -8,7 +8,7 @@ import Cuadro from './Cuadro';
 function App() {
   return (
       <Contenedor>
-        <div className="w-10/12 bg-white grid grid-rows-3 font-Poppins p-6 rounded-3xl rounded-tr-sized">
+        <div className="w-10/12 max-w-md bg-blue-950 grid grid-rows-3 font-Poppins p-6 rounded-3xl rounded-tr-sized">
           <Cuadro_Entrada />
           <Cuadro_Salida />
         </div>
