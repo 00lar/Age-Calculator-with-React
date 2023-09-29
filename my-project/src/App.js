@@ -27,9 +27,20 @@ function App() {
             year = {year}
             setDay = {setDay}
             setMonth = {setMonth}
-            setYear = {setYear} />
-            <button
-            onClick={updval}>Calcular</button>
+            setYear = {setYear} 
+            >
+            
+           </Cuadro_Entrada>
+           <button
+            onClick={updval}
+            
+            className="absolute w-12 bg-purple-900 top-40"
+            >
+              <img
+              className='w-full'
+              src="./src/down-arrow.svg"
+              ></img>
+            </button>
           <Cuadro_Salida
           day_out = {day_out}
           setDay_out = {setDay_out}
