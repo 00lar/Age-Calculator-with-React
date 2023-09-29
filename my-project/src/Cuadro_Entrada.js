@@ -1,6 +1,5 @@
 import {useState} from 'react';
 
-
 function Cuadro_Entrada(props) {
     const {day, month, year, setDay, setMonth, setYear} = props;
 
@@ -8,19 +7,15 @@ function Cuadro_Entrada(props) {
         setDay(event.target.value);
         console.log(day);
     }
-
     const monthChange = (event) => {
         setMonth(event.target.value);
         console.log(month);
     }
-
     const yearChange = (e) => {
         setYear(e.target.value);
         console.log(year);
     }
     
-
-
     return (
         <div className="flex justify-center w-full col-span-1 border-b-2 border-gray-600">
             <div>
