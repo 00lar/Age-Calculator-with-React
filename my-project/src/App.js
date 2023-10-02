@@ -4,6 +4,7 @@ import {Cuadro_Entrada} from './Cuadro_Entrada';
 import {Cuadro_Salida} from './Cuadro_Salida';
 import {useState} from 'react';
 import BtnSvg from './down-arrow.svg';
+import { ArrowIcon } from './ArrowIcon';
 
 function App() {
   const [day, setDay] = useState("");
@@ -15,6 +16,7 @@ function App() {
   const [year_out, setYear_out] = useState("21");
 
   const updval = () => {
+    console.log("updval fue llamado");
     setDay_out(28-day);
     setMonth_out(9-month);
     setYear_out(2023-year);
@@ -32,6 +34,11 @@ function App() {
             >
             
            </Cuadro_Entrada>
+
+           <ArrowIcon
+            updval={updval}         
+           ></ArrowIcon>
+           {/*
            <button
             onClick={updval}
             className="absolute w-12 top-60 left-2/4"
@@ -41,6 +48,7 @@ function App() {
               src={BtnSvg}
               ></img>
             </button>
+            */ }
           <Cuadro_Salida
           day_out = {day_out}
           setDay_out = {setDay_out}
