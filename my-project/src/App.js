@@ -11,16 +11,19 @@ function App() {
   const [month,setMonth] = useState("");
   const [year,setYear] = useState("");
 
-  const [day_out, setDay_out] = useState("0");
-  const [month_out, setMonth_out] = useState("91");
-  const [year_out, setYear_out] = useState("21");
+  const [day_out, setDay_out] = useState("--");
+  const [month_out, setMonth_out] = useState("--");
+  const [year_out, setYear_out] = useState("--");
 
   const updval = () => {
     console.log("updval fue llamado");
-    setDay_out(28-day);
-    setMonth_out(9-month);
-    setYear_out(2023-year);
+    setDay_out(2 - day);
+    const newMonth = month < 0 ? 12 - month : 10 - month;
+    setMonth_out(newMonth);
+    setYear_out(2023 - year);
+
   }
+  
   return (
       <Contenedor>
         <div className="w-10/12 max-w-sm bg-white grid grid-rows-3 font-Poppins p-6 rounded-3xl rounded-tr-sized">
