@@ -17,7 +17,7 @@ function Cuadro_Entrada(props) {
     }
     
     return (
-        <div className="flex justify-center w-full col-span-1 border-b-2 border-gray-600">
+        <div className="flex justify-center items-center w-full row-span-1 border-b-2 border-gray-600">
             <div>
                 <p>DAY</p>
                 <input 

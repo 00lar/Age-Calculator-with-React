@@ -3,6 +3,7 @@ import {Contenedor} from './Contenedor';
 import {Cuadro_Entrada} from './Cuadro_Entrada';
 import {Cuadro_Salida} from './Cuadro_Salida';
 import {useState} from 'react';
+import BtnSvg from './down-arrow.svg';
 
 function App() {
   const [day, setDay] = useState("");
@@ -33,12 +34,11 @@ function App() {
            </Cuadro_Entrada>
            <button
             onClick={updval}
-            
-            className="absolute w-12 bg-purple-900 top-40"
+            className="absolute w-12 top-60 left-2/4"
             >
               <img
               className='w-full'
-              src="./src/down-arrow.svg"
+              src={BtnSvg}
               ></img>
             </button>
           <Cuadro_Salida
